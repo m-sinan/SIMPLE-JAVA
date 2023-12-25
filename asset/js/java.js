@@ -15,7 +15,7 @@ function yellow() {
 }
 function back() {
     document.getElementById("body").style.backgroundColor="brown"
-    alert("you want to refreshed");
+    alert("you want to refresh");
 }
     var speed;
 function mainloader() {

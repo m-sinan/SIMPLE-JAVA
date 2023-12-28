@@ -19,7 +19,7 @@ function back() {
 }
     var speed;
 function mainloader() {
-    speed = setTimeout(innerfunction,5000);
+    speed = setTimeout(innerfunction,4000);
 }
 function innerfunction() {
     document.getElementById("main").style.display = "block";

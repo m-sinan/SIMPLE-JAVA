@@ -4,67 +4,48 @@
   align-items: center;
 }
 /* refresh button start*/
-.refresh-btn {
-  --main-focus: #2d8cf0;
-  --font-color: #323232;
-  --bg-color-sub: #dedede;
-  --bg-color: #eee;
-  --main-color: #323232;
-  position: relative;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
+.button {
+  color: white;
+  background-color: #222;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-flex;
   align-items: center;
-  border: 2px solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
-  background-color: var(--bg-color);
-  border-radius: 10px;
-  overflow: hidden;
+  border: none;
 }
 
-.refresh-btn, .refresh-btn__icon, .refresh-btn__text {
-  transition: all 0.3s;
+.button:hover {
+  background-color: #333;
 }
 
-.refresh-btn .refresh-btn__text {
-  transform: translateX(30px);
-  color: var(--font-color);
-  font-weight: 600;
+.button svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  color: white;
 }
 
-.refresh-btn .refresh-btn__icon {
-  position: absolute;
-  transform: translateX(109px);
-  height: 100%;
-  width: 39px;
-  background-color: var(--bg-color-sub);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button:focus svg {
+  animation: spin_357 0.5s linear;
 }
 
-.refresh-btn .svg {
-  width: 20px;
-  fill: var(--main-color);
-}
+@keyframes spin_357 {
+  from {
+    transform: rotate(0deg);
+  }
 
-.refresh-btn:hover {
-  background: var(--bg-color);
-}
-
-.refresh-btn:hover .refresh-btn__text {
-  color: transparent;
-}
-
-.refresh-btn:hover .refresh-btn__icon {
-  width: 148px;
-  transform: translateX(0);
-}
-
-.refresh-btn:active {
-  transform: translate(3px, 3px);
-  box-shadow: 0px 0px var(--main-color);
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* refresh button end*/
 
